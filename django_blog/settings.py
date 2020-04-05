@@ -124,4 +124,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# We put this in to change where pics are saved
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# how we access folder in browser
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# We put this in because Django will default to redirecting logins to their
+# profile and we wish them to go to the HOME page.
+LOGIN_REDIRECT_URL = 'blog-home'
+# once again, redirecting logins to our login page not the default django path
+LOGIN_URL = 'login'
