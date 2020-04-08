@@ -23,7 +23,8 @@ print("##############")
 # print(email_user1)
 # print(email_password1)
 
-
+DEBUG = False
+print(DEBUG)
 
 
 
